@@ -1,0 +1,192 @@
+body {
+    margin:0;
+    padding:0;	
+    font-family: 'Saira Semi Condensed', sans-serif;
+    }
+.wraper {
+    padding-top:99px; 
+    text-align: center;	
+    }	
+ .list-container{ 
+    max-width:1300px; 
+    margin: 0 auto;
+    font-size: 0;  
+  }   
+.list-outer {
+    max-width:48%;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;	
+    padding:33px 21px 31px;
+    box-sizing:border-box;
+    border:1px solid #d1d1d1;
+    margin:0 15px; 
+    text-align: center;
+    min-height: 450px;
+    
+    }
+.list-outer:last-child {
+    margin-right:0px;
+    }	
+.title {
+    margin-bottom:80px;	
+    }	 
+.title h2 {
+    font-size:30px;
+    line-height:30px;
+    color:#0c2023;
+    font-weight:700;
+    margin:0;
+    text-align:center;
+    text-transform:uppercase;	
+    }
+.form{
+    margin-bottom:30px;	
+    text-align: left;
+    border-bottom:1px solid #9f9f9f;
+    padding-bottom:30px;
+    }	
+ input[type="text"] {
+        width: 296px;
+        padding: 12px 20px;
+        display: inline-block;
+        vertical-align: top;
+        border:1px solid #d1d1d1;
+        background:#e7eaf0;
+        box-sizing:border-box;
+        border-radius: 5px;
+        
+    }
+ input[type="button"] {
+    display: inline-block;
+    border: none;
+    padding: 0 50px;
+    line-height: 50px;
+    vertical-align: top;
+    cursor:pointer;
+    border-radius:5px;
+    background: #4263ac;
+    margin-left:20px;
+    font-size:16px;
+    color:#ffffff;
+    text-transform:capitalize;
+    font-weight:400;
+}
+.list-outer input{ font-size: 18px;   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  }
+.list-outer input::placeholder{ font-size: 18px;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  }
+.list-outer .list ol.rectangle-list { width: 100%;  margin: 0; padding: 0; height: 260px; overflow: hidden; overflow-y: scroll; }
+ .list-outer .list ol.rectangle-list li { font-size: 15px;  display: block;text-align: left;   } 
+
+ ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+
+
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .6em .6em .6em .6em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #000;
+    text-decoration: none;
+    transition: all .3s ease-out; 
+     
+}
+.rectangle-list a:hover{
+    background: #eee;
+}   
+
+.rectangle-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #4263ac;
+    color: #fff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list a:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color: #4263ac;             
+}
+.rectangle-list::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px #4263ac;    
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.rectangle-list::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.rectangle-list::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    box-shadow: inset 0 0 6px #4263ac;
+	background-color: #4263ac;
+}
+
+.select-class{
+    height: 50px;
+    width: 60px;
+    margin-left: 15px;
+    padding: 0 0 0 10px;
+    border-radius: 5px;
+    background: #4263ac;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    outline: none;
+}
+.set-size{
+    text-align: left;
+    padding: 15px 0 0 0;
+}
+.set-size label {
+    font-size: 18px;
+}
+.list hr {
+    margin: 30px 0px 0;
+}
+.set-size .notification{ 
+    margin: 0 0 0 15px;
+    padding: 11px 15px; 
+    background: #cccccc;
+    border-radius: 5px;
+    display: inline-block;    
+}
+.set-size .success{
+    background: #A0D468;
+}
